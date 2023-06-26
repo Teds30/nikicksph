@@ -1,0 +1,88 @@
+.btn {
+    display: flex;
+    width: fit-content;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    height: fit-content;
+
+    padding: 12px 18px;
+    gap: 8px;
+    border-radius: 32px;
+    /* align-self: stretch; */
+
+    font-weight: 500;
+
+    max-width: 500px;
+    /* width: 100%; */
+}
+.btn-fill {
+    width: 100%;
+}
+
+.btn-outlined-danger {
+    border: 1px solid #eb5858;
+    color: #eb5858;
+}
+.btn-outlined {
+    border: 1px solid var(--accent);
+    color: var(--accent);
+}
+
+.btn-primary {
+    background-color: #303030;
+    color: #fff;
+}
+
+.btn-primary:disabled {
+    background-color: #30303061;
+}
+.btn-secondary {
+    background-color: var(--bg-layer2);
+    color: var(--fc-body);
+}
+
+.btn-plain {
+    background-color: transparent;
+    color: var(--fc-strong);
+    /* border: 1px solid red; */
+}
+
+.btn-danger {
+    color: var(--accent-danger);
+}
+.btn-danger:hover {
+    background-color: var(--accent-danger-light);
+}
+
+.btn-danger-tinted {
+    color: var(--accent-danger);
+    background-color: var(--accent-danger-light);
+}
+
+.btn span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: fit-content;
+}
+.btn span svg {
+    width: 18px;
+    height: 18px;
+}
+
+.btn-container {
+    display: flex;
+    gap: 12px;
+}
+
+.btn-container-left {
+    justify-content: flex-end;
+    display: flex;
+    gap: 12px;
+}
+
+.btn-link {
+    text-decoration: none;
+}

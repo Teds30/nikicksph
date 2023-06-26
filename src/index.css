@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Bacasime+Antique&family=Bebas+Neue&family=Bruno+Ace&family=IBM+Plex+Sans:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700;800;900&family=Nunito+Sans:wght@400;600;700&family=Playfair+Display:wght@400;500;600;700&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500&family=Roboto:wght@300;400;500;700&display=swap');
+
+:root {
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+
+    /* color-scheme: light dark; */
+    color: rgba(0, 0, 0, 0.87);
+    background-color: #fff;
+
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
+
+    --primary-color: #303030;
+}
+
+a {
+    font-weight: 500;
+    color: #646cff;
+    text-decoration: inherit;
+}
+a:hover {
+    color: #535bf2;
+}
+
+body {
+    margin: 0;
+    /* display: flex; */
+    /* place-items: center;
+    min-width: 320px; */
+    min-height: 100vh;
+}
+
+h1 {
+    margin: 0px;
+    font-family: 'Bacasime Antique';
+    /* font-weight: 700; */
+    font-size: 3.2em;
+    line-height: 1.1;
+}
+
+button {
+    border-radius: 8px;
+    border: 1px solid transparent;
+    padding: 0.6em 1.2em;
+    font-size: 1em;
+    font-weight: 500;
+    font-family: inherit;
+    background-color: #1a1a1a;
+    cursor: pointer;
+    transition: border-color 0.25s;
+}
+button:hover {
+    border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+    outline: 4px auto -webkit-focus-ring-color;
+}
+
+/* @media (prefers-color-scheme: light) {
+    :root {
+        color: #213547;
+        background-color: #ffffff;
+    }
+    a:hover {
+        color: #747bff;
+    }
+    button {
+        background-color: #f9f9f9;
+    }
+} */
+
+nav {
+    display: flex;
+    padding: 2em 0;
+}
+
+nav .brand {
+    font-weight: 500;
+    font-size: 1.3em;
+}
+.wrapper {
+    width: 100%;
+    width: 100%;
+}
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-grow: 1;
+}
+.col {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    justify-content: center;
+}
+
+.mt-1 {
+    margin-top: 1em;
+}
+.mt-2 {
+    margin-top: 2em;
+}
+.mt-3 {
+    margin-top: 3em;
+}
+
+p {
+    color: rgba(0, 0, 0, 0.6);
+}
+.input-fields-container {
+    padding-inline: 4em;
+    /* max-width: 500px; */
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    align-items: center;
+
+    /* align-items: flex-start; */
+    gap: 1em;
+}
+.input-field {
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+
+    align-items: flex-start;
+    justify-content: center;
+    gap: 0.4em;
+}
+.input {
+    /* max-width: 500px; */
+
+    height: 50px;
+    border-radius: 7px;
+    border: 0;
+    outline: auto grey;
+    padding-inline: 15px;
+    font-size: 16px;
+    transform: all 200ms;
+    /* background-color: #fff;
+    color: inherit; */
+    flex-grow: 1;
+    width: calc(100% - 30px);
+}
+
+.input:focus {
+    text-decoration: underline 6px;
+    /* box-shadow: 0 0 50px rgb(255, 255, 255); */
+    /* border: 1px solid grey; */
+}
+label {
+    font-weight: 500;
+}
+
+.required {
+    color: red;
+}
+
+.image-container {
+    position: relative;
+    width: 100%;
+    height: 700px;
+
+    overflow: hidden;
+
+    background-image: url('assets/download.jpg');
+    background-size: cover;
+    background-position: 30% 30%;
+}
+
+.image-container img {
+    width: inherit;
+    object-fit: fill;
+}
+
+.footer {
+    border-top: 1px solid #cfd1d3;
+    padding-top: 2em;
+    width: 100%;
+    /* background-color: #303030; */
+    margin-top: 2em;
+}
+
+@media screen and (max-width: 768px) {
+    .col2 {
+        display: none;
+    }
+
+    .input-fields-container {
+        padding-inline: 0;
+    }
+}
