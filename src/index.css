@@ -198,4 +198,7 @@ label {
     .input-fields-container {
         padding-inline: 0;
     }
+    #root {
+        padding-top: 0;
+    }
 }
